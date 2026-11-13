@@ -3,27 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio - Marcos Jose Pedro</title>
+  <title>Marcos Jose Pedro | Desenvolvedor de Sistemas</title>
+  <meta name="description" content="Portfólio de Marcos Jose Pedro — Desenvolvedor de sistemas em formação. Soluções digitais para pequenos negócios.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
   <header class="topbar">
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+    <div class="topbar-inner">
+      <a href="#inicio" class="logo">Marcos<span>.</span></a>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="inicio" id="inicio">
-      <div class="apresentacao">
-        <p class="destaque">OLÁ, SOU</p>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">Olá, sou</p>
         <h1>Marcos Jose Pedro</h1>
-        <h2>Desenvolvedor de Sistemas (em formação)</h2>
+        <h2 class="subtitle">Desenvolvedor de Sistemas <span>(em formação)</span></h2>
 
         <p class="lead">
           Desenvolvo soluções digitais para ajudar pequenos negócios.
@@ -31,9 +38,9 @@
           sistemas com foco em praticidade, organização e manutenção.
         </p>
 
-        <div class="cta">
-          <a class="contacto-link" href="#contacto">Entrar em contacto</a>
-          <a class="ghost-link" href="https://github.com/mp9978348-dotcom" target="_blank" rel="noopener noreferrer">
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#contacto">Entrar em contacto</a>
+          <a class="btn btn-ghost" href="https://github.com/mp9978348-dotcom" target="_blank" rel="noopener noreferrer">
             Ver GitHub
           </a>
         </div>
@@ -50,53 +57,54 @@
         </div>
       </div>
 
-      <div class="foto">
-        <img src="imagens/marcos.jpg" alt="Fotografia de Marcos Pedro" />
-      </div>
-    </section>
-
-    <section id="sobre" class="card">
-      <h2>Sobre mim</h2>
-      <p>
-        Sou desenvolvedor de sistemas em formação e procuro transformar conhecimento em soluções reais.
-      </p>
-
-      <div class="grid-2">
-        <div class="mini-card">
-          <h3>Área</h3>
-          <p><strong>Desenvolvimento de sistemas</strong></p>
-        </div>
-        <div class="mini-card">
-          <h3>Tecnologia principal</h3>
-          <p><strong>Python</strong></p>
-        </div>
-      </div>
-
-      <div class="grid-2">
-        <div class="mini-card">
-          <h3>Formação</h3>
-          <p>
-            Tenho estudado programação e estou a consolidar bases para construir sistemas completos.
-          </p>
-        </div>
-        <div class="mini-card">
-          <h3>Objetivo</h3>
-          <p>
-            Criar aplicações úteis para lojas, ginásios, escolas e negócios que precisam de organização.
-          </p>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="imagens/marcos.jpg" alt="Fotografia de Marcos Pedro" />
         </div>
       </div>
     </section>
 
-    <section id="projetos" class="card">
-      <h2>Meus projetos</h2>
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="section-header">
+        <h2>Sobre mim</h2>
+        <p>Sou desenvolvedor de sistemas em formação e procuro transformar conhecimento em soluções reais.</p>
+      </div>
 
-      <div class="projetos-lista">
-        <article class="projeto">
-          <h3>Controlo e Gestão de Stock — Versão 1.0</h3>
-          <p>
-            Projeto para ajudar no controlo de produtos e na gestão de stock, com foco em organização e clareza.
-          </p>
+      <div class="grid-2">
+        <div class="info-card">
+          <span class="label">Área</span>
+          <p>Desenvolvimento de sistemas</p>
+        </div>
+        <div class="info-card">
+          <span class="label">Tecnologia principal</span>
+          <p>Python</p>
+        </div>
+        <div class="info-card">
+          <span class="label">Formação</span>
+          <p>Tenho estudado programação e estou a consolidar bases para construir sistemas completos.</p>
+        </div>
+        <div class="info-card">
+          <span class="label">Objetivo</span>
+          <p>Criar aplicações úteis para lojas, ginásios, escolas e negócios que precisam de organização.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="section-header">
+        <h2>Meus projetos</h2>
+        <p>Alguns trabalhos que já desenvolvi e continuo a melhorar.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Controlo e Gestão de Stock</h3>
+            <span class="version">v1.0</span>
+          </div>
+          <p>Projeto para ajudar no controlo de produtos e na gestão de stock, com foco em organização e clareza.</p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">Gestão</span>
@@ -104,25 +112,19 @@
           </div>
         </article>
 
-        <article class="projeto">
-          <h3>Quiz Educativo — Versão 4.0</h3>
-          <p>
-            Aplicação educativa com perguntas e respostas para praticar conhecimentos da cultura mundial.
-          </p>
-
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Quiz Educativo</h3>
+            <span class="version">v4.0</span>
+          </div>
+          <p>Aplicação educativa com perguntas e respostas para praticar conhecimentos da cultura mundial.</p>
           <div class="tags">
             <span class="tag">Python</span>
             <span class="tag">Educação</span>
             <span class="tag">Interatividade</span>
           </div>
-
-          <a
-            class="contacto-link"
-            href="https://mp9978348-dotcom.github.io/Quiz-educativo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Jogar Quiz Educativo
+          <a class="btn btn-sm" href="https://mp9978348-dotcom.github.io/Quiz-educativo/" target="_blank" rel="noopener noreferrer">
+            Jogar Quiz Educativo →
           </a>
         </article>
       </div>
@@ -132,61 +134,67 @@
       </p>
     </section>
 
-    <section id="servicos" class="card">
-      <h2>Serviços</h2>
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section">
+      <div class="section-header">
+        <h2>Serviços</h2>
+        <p>O que posso desenvolver para ti ou para o teu negócio.</p>
+      </div>
 
-      <div class="servicos-lista">
-        <div class="servico">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📦</div>
           <h3>Gestão de Stock</h3>
           <p>Sistemas para registar produtos, entradas/saídas e controlo simples.</p>
         </div>
-
-        <div class="servico">
+        <div class="service-card">
+          <div class="service-icon">🎓</div>
           <h3>Aplicações para aprendizagem</h3>
           <p>Quizzes, aplicações educativas e conteúdos interativos.</p>
         </div>
-
-        <div class="servico">
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
           <h3>Automação e organização</h3>
           <p>Pequenas automações para economizar tempo e reduzir erros.</p>
         </div>
-
-        <div class="servico">
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
           <h3>Web / Interfaces</h3>
           <p>Interfaces básicas (HTML/CSS) e páginas para apresentar projetos.</p>
         </div>
       </div>
     </section>
 
-    <section id="contacto" class="card">
-      <h2>Contacto</h2>
-      <p>
-        Queres saber mais sobre os meus projetos ou conversar sobre uma solução para o teu negócio?
-        Entra em contacto comigo.
-      </p>
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact-section">
+      <div class="section-header">
+        <h2>Contacto</h2>
+        <p>
+          Queres saber mais sobre os meus projetos ou conversar sobre uma solução para o teu negócio?
+          Entra em contacto comigo.
+        </p>
+      </div>
 
-      <div class="cta-contact">
-        <a class="contacto-link" href="https://wa.me/244953532283" target="_blank" rel="noopener noreferrer">
+      <div class="contact-links">
+        <a class="btn btn-primary" href="https://wa.me/244953532283" target="_blank" rel="noopener noreferrer">
           WhatsApp
         </a>
-
-        <a class="contacto-link" href="https://www.facebook.com/mp9978348" target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-ghost" href="https://www.facebook.com/mp9978348" target="_blank" rel="noopener noreferrer">
           Facebook
         </a>
-
-        <a class="contacto-link" href="mailto:mp9978348@gmail.com">
+        <a class="btn btn-ghost" href="mailto:mp9978348@gmail.com">
           Enviar email
         </a>
-
-        <a class="contacto-link" href="https://github.com/mp9978348-dotcom" target="_blank" rel="noopener noreferrer">
-          Visita o meu GitHub
+        <a class="btn btn-ghost" href="https://github.com/mp9978348-dotcom" target="_blank" rel="noopener noreferrer">
+          GitHub
         </a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Marcos Jose Pedro | Meu Portfólio</p>
+    <p>© 2026 Marcos Jose Pedro · Portfólio</p>
   </footer>
+
 </body>
 </html>
