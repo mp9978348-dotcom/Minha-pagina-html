@@ -1,151 +1,192 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portfólio - Marcos Jose Pedro</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Marcos Jose Pedro</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
+  <header class="topbar">
     <nav>
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contacto">Contacto</a>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contacto">Contacto</a>
     </nav>
+  </header>
 
-    <main>
+  <main class="container">
+    <section class="inicio" id="inicio">
+      <div class="apresentacao">
+        <p class="destaque">OLÁ, SOU</p>
+        <h1>Marcos Jose Pedro</h1>
+        <h2>Desenvolvedor de Sistemas (em formação)</h2>
 
-        <div class="inicio" id="inicio">
+        <p class="lead">
+          Desenvolvo soluções digitais para ajudar pequenos negócios.
+          Estou a aprofundar conhecimentos em <strong>Python</strong> e construção de
+          sistemas com foco em praticidade, organização e manutenção.
+        </p>
 
-            <div class="apresentacao">
-                <p class="destaque">OLÁ, SOU</p>
-
-                <h1>Marcos Jose Pedro</h1>
-
-                <h2>Desenvolvedor de Sistemas</h2>
-
-                <p>
-                    Desenvolvo projetos de programação com foco
-                    em soluções digitais para pequenos negócios.
-                    Estou a aprofundar os meus conhecimentos em
-                    Python e desenvolvimento de sistemas.
-                </p>
-
-                <a class="contacto-link" href="#contacto">
-                    Entrar em contacto
-                </a>
-            </div>
-
-            <div class="foto">
-                <img src="imagens/marcos.jpg"
-                     alt="Fotografia de Marcos Pedro">
-            </div>
-
+        <div class="cta">
+          <a class="contacto-link" href="#contacto">Entrar em contacto</a>
+          <a class="ghost-link" href="https://github.com/mp9978348-dotcom" target="_blank" rel="noopener noreferrer">
+            Ver GitHub
+          </a>
         </div>
 
-        <section id="sobre">
-            <h2>Sobre mim</h2>
+        <div class="stats">
+          <div class="stat">
+            <strong>Foco</strong>
+            <span>Sistemas e automações</span>
+          </div>
+          <div class="stat">
+            <strong>Stack</strong>
+            <span>Python • Web • Lógica</span>
+          </div>
+        </div>
+      </div>
 
-            <p>
-                Sou desenvolvedor de sistemas em formação e
-                procuro transformar os meus conhecimentos de
-                programação em soluções práticas.
-            </p>
+      <div class="foto">
+        <img src="imagens/marcos.jpg" alt="Fotografia de Marcos Pedro" />
+      </div>
+    </section>
 
-            <p>
-                <strong>Área:</strong> Desenvolvimento de sistemas
-            </p>
+    <section id="sobre" class="card">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou desenvolvedor de sistemas em formação e procuro transformar conhecimento em soluções reais.
+      </p>
 
-            <p>
-                <strong>Tecnologia principal:</strong> Python
-            </p>
-        </section>
+      <div class="grid-2">
+        <div class="mini-card">
+          <h3>Área</h3>
+          <p><strong>Desenvolvimento de sistemas</strong></p>
+        </div>
+        <div class="mini-card">
+          <h3>Tecnologia principal</h3>
+          <p><strong>Python</strong></p>
+        </div>
+      </div>
 
-        <section id="projetos">
-            <h2>Meus projetos</h2>
+      <div class="grid-2">
+        <div class="mini-card">
+          <h3>Formação</h3>
+          <p>
+            Tenho estudado programação e estou a consolidar bases para construir sistemas completos.
+          </p>
+        </div>
+        <div class="mini-card">
+          <h3>Objetivo</h3>
+          <p>
+            Criar aplicações úteis para lojas, ginásios, escolas e negócios que precisam de organização.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <div class="projeto">
-                <h3>Controlo e Gestão de Stock — Versão 1.0</h3>
+    <section id="projetos" class="card">
+      <h2>Meus projetos</h2>
 
-                <p>
-                    Projeto de programação destinado a ajudar
-                    no controlo de produtos e na gestão de stock.
-                </p>
-            </div>
+      <div class="projetos-lista">
+        <article class="projeto">
+          <h3>Controlo e Gestão de Stock — Versão 1.0</h3>
+          <p>
+            Projeto para ajudar no controlo de produtos e na gestão de stock, com foco em organização e clareza.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Gestão</span>
+            <span class="tag">Dados</span>
+          </div>
+        </article>
 
-            <div class="projeto">
-                <h3>Quiz Educativo — Versão 4.0</h3>
+        <article class="projeto">
+          <h3>Quiz Educativo — Versão 4.0</h3>
+          <p>
+            Aplicação educativa com perguntas e respostas para praticar conhecimentos da cultura mundial.
+          </p>
 
-                 
-<p>
-    Aplicação educativa de perguntas e respostas
-    para praticar conhecimentos da cultura mundial.
-</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Educação</span>
+            <span class="tag">Interatividade</span>
+          </div>
 
-<p>Clica no botão abaixo para jogar o Quiz Educativo:</p>
+          <a
+            class="contacto-link"
+            href="https://mp9978348-dotcom.github.io/Quiz-educativo/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Jogar Quiz Educativo
+          </a>
+        </article>
+      </div>
 
-<a class="contacto-link"
-   href="https://mp9978348-dotcom.github.io/Quiz-educativo/"
-   target="_blank"
-   rel="noopener noreferrer">
-    Jogar Quiz Educativo
-</a>
-            </div>
+      <p class="note">
+        Se quiseres, posso adaptar um sistema para o teu negócio com base nas tuas necessidades.
+      </p>
+    </section>
 
-            <p>
-                Tenho interesse em desenvolver sistemas para
-                lojas, ourivesarias, minimercados, ginásios e colégios.
-            </p>
-        </section>
+    <section id="servicos" class="card">
+      <h2>Serviços</h2>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
+      <div class="servicos-lista">
+        <div class="servico">
+          <h3>Gestão de Stock</h3>
+          <p>Sistemas para registar produtos, entradas/saídas e controlo simples.</p>
+        </div>
 
-            <p>
-                Queres saber mais sobre os meus projetos ou
-                conversar sobre uma solução para o teu negócio?
-                Entra em contacto comigo.
-            </p>
+        <div class="servico">
+          <h3>Aplicações para aprendizagem</h3>
+          <p>Quizzes, aplicações educativas e conteúdos interativos.</p>
+        </div>
 
-            <a class="contacto-link"
-               href="https://wa.me/244953532283"
-               target="_blank"
-               rel="noopener noreferrer">
-                WhatsApp
-            </a>
+        <div class="servico">
+          <h3>Automação e organização</h3>
+          <p>Pequenas automações para economizar tempo e reduzir erros.</p>
+        </div>
 
-            <a class="contacto-link"
-               href="https://www.facebook.com/mp9978348"
-               target="_blank"
-               rel="noopener noreferrer">
-                Facebook
-            </a>
+        <div class="servico">
+          <h3>Web / Interfaces</h3>
+          <p>Interfaces básicas (HTML/CSS) e páginas para apresentar projetos.</p>
+        </div>
+      </div>
+    </section>
 
-            <a class="contacto-link"
-               href="mailto:mp9978348@gmail.com">
-                Enviar email
-            </a>
-<a
-    href="https://github.com/mp9978348-dotcom"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="github-link"
->
-    Visita o meu GitHub
-</a>
+    <section id="contacto" class="card">
+      <h2>Contacto</h2>
+      <p>
+        Queres saber mais sobre os meus projetos ou conversar sobre uma solução para o teu negócio?
+        Entra em contacto comigo.
+      </p>
 
-        </section>
+      <div class="cta-contact">
+        <a class="contacto-link" href="https://wa.me/244953532283" target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
 
-    </main>
+        <a class="contacto-link" href="https://www.facebook.com/mp9978348" target="_blank" rel="noopener noreferrer">
+          Facebook
+        </a>
 
-    <footer>
-        <p>© 2026 Marcos Jose Pedro | Meu Portfólio</p>
-    </footer>
+        <a class="contacto-link" href="mailto:mp9978348@gmail.com">
+          Enviar email
+        </a>
 
+        <a class="contacto-link" href="https://github.com/mp9978348-dotcom" target="_blank" rel="noopener noreferrer">
+          Visita o meu GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Marcos Jose Pedro | Meu Portfólio</p>
+  </footer>
 </body>
 </html>
