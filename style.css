@@ -699,3 +699,52 @@ button:focus-visible {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* ==================================================
+   ACRESCENTAR NO FIM DO style.css
+   Tecnologias, preços dos serviços
+================================================== */
+
+/* TECNOLOGIAS */
+.tech-group {
+    margin-bottom: 28px;
+}
+
+.tech-group h3 {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.tech-group .tag {
+    padding: 9px 18px;
+    font-size: 0.88rem;
+}
+
+/* Tecnologias que ainda estou a aprender: contorno tracejado */
+.tag-learning {
+    color: var(--muted);
+    background: transparent;
+    border-style: dashed;
+}
+
+/* SERVIÇOS COM PREÇO */
+.service-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card .price {
+    margin-top: auto;
+    padding-top: 18px;
+    margin-bottom: 0;
+    color: var(--accent);
+    font-size: 1.02rem;
+    font-weight: 700;
+}
+
+.service-card .btn-sm {
+    align-self: flex-start;
+    margin-top: 14px;
+}
